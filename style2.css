@@ -1,0 +1,152 @@
+body{
+    background-image: url(bg2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    }
+
+h1{
+    text-align: center;
+    font-family: poppins;
+    color: rgb(26, 26, 68);
+}
+
+.online1{
+    color: green;
+    background-color: red;
+}
+
+.online2{
+    color: red;
+    background-color: green;
+}
+
+th, td{
+    text-align: center;
+    font-family: roboto, montserrat;
+    color: white;
+    padding: 10px;
+}
+
+thead{
+    padding-top: 50px;
+}
+
+.content{
+    background-color: rgba(0, 0, 0, .5);
+    width: 850px;
+    margin: auto ;
+}
+
+.container{
+    width: 500px;
+    margin: auto ;
+    padding-left: 20px;
+    background-color: rgba(240, 228, 228, 0.7);
+}
+.btn{
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+    color: red;
+    font-family: montserrat, roboto;
+    font-weight: bolder;
+}
+
+.btn-checkout{
+    border-radius: 5px;
+    padding: 10px;
+    background-color: red;
+    color: white;
+}
+
+.btn-checkout:hover{
+    color: black;
+    background-color: white;
+    border: 2px solid red;
+}
+
+.btn:hover{
+    background-color: rgb(37, 37, 35);
+    color: beige;
+}
+
+.searchbtn{
+    width: 12%;
+    margin-left: 10px;
+    height: 24px;
+}
+
+.filter{
+    padding: auto 10px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+i{
+    size: 5px;
+    padding-right: 3px;
+}
+
+#searchbar{
+    width: 50%;
+    height: 20px;
+    border-radius: 5px;
+}
+
+#filter{
+    width: 13%;
+    height: 23px;
+}
+
+.tr-content{
+    text-align: left;
+    color: black;
+}
+
+#device{
+    float: left;
+    height: 24px;
+    border-radius: 3px;
+}
+
+.Payment{
+    float: left;
+    text-align: left;
+}
+
+label{
+    float: left;
+    padding-left: 5px;
+    color: black;
+}
+
+.title{
+    padding-top: 30px;
+    font-family: Poppins, montserrat, roboto;
+}
+
+.fillup{
+    border-radius: 3px solid aqua;
+    
+    height: 17px;
+}
+
+.placebtn{
+    height: 40px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+.placebtn:hover{
+    background-color: aliceblue;
+    color: green;
+    border: none;
+    transition: 400ms ease;
+}
+
+.fi-padding{
+    padding: auto;
+}
+

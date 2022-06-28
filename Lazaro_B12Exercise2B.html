@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style2.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Lazaro_B12Exercise2B.html</title>
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+
+  <div class="container">
+    <div class="col-lg-4 mx-auto">
+      <div class="title">
+        <h1>Checkout Form</h1><br>
+      </div>
+
+    <div class="checkout">
+      <table>
+        <tr>
+          <td class="tr-content">Name:</td>
+          <td>
+            <input type="text" class="fillup" id="fname">
+          </td>
+        </tr>
+        <tr>
+          <td class="tr-content">Address:</td>
+          <td>
+            <input type="text" class="fillup" id="address">
+          </td>
+        </tr>
+        <tr>
+          <td class="tr-content">Region:</td>
+          <td>
+            <form action="" id="select">
+            <select name="device" id="RegionName" onchange="selectRegion()">
+              <option value="r1" id="reg1">Region 1</option>
+              <option value="r2" id="reg2">ARMM</option>
+              <option value="r2" id="reg3">NCR</option>
+              <option value="r4" id="reg4">CAR</option>
+            </select>
+          </form>
+          </td>
+        </tr>
+        <tr>
+          <td class="tr-content">Conntact number:</td>
+          <td colspan="4">
+            <input type="number" class="fillup" id="cellNum">
+          </td>
+        </tr>
+
+        </tr>
+        <tr>
+          <td class="tr-content">Payment method:</td>
+          <td>
+
+            <input type="radio" name="payment" id="COD" class="Payment" onclick="getRadio('COD')">
+            <label for="COD">Cash on Delivery</label>
+
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+
+            <input type="radio" name="payment" id="Master" class="Payment" onclick="getRadio('Mastercard')">
+            <label for="master">Mastercard</label>
+          </td>
+        </tr>
+        <tr class="tr-content">
+          <td></td>
+          <td>
+            <input type="radio" name="payment" id="visa" class="Payment" onclick="getRadio('Visa')">
+            <label for="visa">Visa</label>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input type="radio" name="payment" id="Amex" class="Payment" onclick="getRadio()">
+            <label for="amex">American Express</label>
+          </td>
+        <tr class="tr-content">
+          <td>
+            <form action="Lastname_B12Exercise2A.html">
+              <button class="placebtn">Go back</button>
+            </form>
+          </td>
+          <td>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="getForm()">
+              Checkout
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Checkout</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h1>Details</h1>
+
+                    <p>Name:  <span id="name"></span></p>
+                    <p>Phone Number:  <span id="cellphone"></span></p>
+                    <p>Address: <span id="Address"></span></p>
+                    <p>Region: <span id="region"></span></p>
+                    <p>Mode of payment:  <span id="mop"></span></p>
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+
+        </tr><br>
+
+
+
+      </table>
+    </div>
+  </div>
+  </div>
+
+
+  <script>
+    function getForm() {
+      let cp = document.getElementById('cellNum').value;
+      let fullName = document.getElementById('fname').value;
+      let add = document.getElementById('address').value;
+
+
+      document.getElementById('cellphone').innerHTML = cp;
+      document.getElementById('name').innerHTML = fullName;
+      document.getElementById('Address').innerHTML = add;
+    }
+
+    function getRadio(CODMastercardVisaAmex) {
+      document.getElementById('mop').innerHTML = CODMastercardVisaAmex;
+    }
+
+    function selectRegion() {
+        var regionSelect = document.getElementById('region').innerHTML = 
+          (select.RegionName[select.RegionName.selectedIndex].text)
+          
+
+       
+    }
+  </script>
+
+</body>
+
+</html>
